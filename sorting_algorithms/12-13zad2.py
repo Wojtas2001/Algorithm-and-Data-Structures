@@ -45,41 +45,8 @@ def parent(i:int):
     return (i-1)//2
 
 
-# def heapify_min(A:list, n:int, i:int):
-#     m = i
-#     l = left(i)
-#     r = right(i)
-#     if l < n and A[l].value < A[m].value: m = l
-#     if r < n and A[r].value < A[m].value: m = r
-#     if m != i:
-#         A[i], A[m] = A[m], A[i]
-#         heapify_min(A, n, m)
 
-
-# def heapify_max(A:list, n:int, i:int):
-#     m = i
-#     l = left(i)
-#     r = right(i)
-#     if l < n and A[l].value > A[m].value: m = l
-#     if r < n and A[r].value > A[m].value: m = r
-#     if m != i:
-#         A[i], A[m] = A[m], A[i]
-#         heapify_max(A, n, m)
-
-
-# def buildheap(A:list):
-#     n = len(A)
-#     min_heap = A
-#     max_heap = A.copy()
-#     for i in range(parent(n-1), -1 ,-1):
-#         heapify_min(min_heap, n, i)
-#         heapify_max(max_heap, n, i)
-#
-#     return min_heap, max_heap
-
-
-
-# def tab2List(A:list):
+# def tab2List(A:list) -> Node:
 #
 #     head = Node()
 #     head.value = A[0]
